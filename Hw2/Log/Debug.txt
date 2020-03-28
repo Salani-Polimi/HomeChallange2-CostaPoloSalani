@@ -1,0 +1,76 @@
+********************************************
+*                                          *
+*             TOSSIM Script                *
+*                                          *
+********************************************
+Initializing mac....
+Initializing radio channels....
+    using topology file: topology.txt
+    using noise file: meyer-heavy.txt
+Initializing simulator....
+Activate debug message on channel init
+Activate debug message on channel boot
+Activate debug message on channel radio
+Activate debug message on channel radio_send
+Activate debug message on channel radio_on
+Activate debug message on channel radio_ack
+Activate debug message on channel radio_rec
+Activate debug message on channel radio_pack
+Activate debug message on channel radio_error
+Activate debug message on channel error_ack
+Activate debug message on channel fake_sensor_value
+Activate debug message on channel role
+Creating node 1...
+>>>Will boot at time 0 [sec]
+Creating node 2...
+>>>Will boot at time 5 [sec]
+Creating radio channels...
+>>>Setting radio channel from node  1  to node  2  with gain  -60.0  dBm
+>>>Setting radio channel from node  2  to node  1  with gain  -60.0  dBm
+Initializing Closest Pattern Matching (CPM)...
+Reading noise model data file: meyer-heavy.txt
+Loading:##Done!
+>>>Creating noise model for node: 1
+>>>Creating noise model for node: 2
+Start simulation with TOSSIM! 
+
+ 
+
+ 
+
+DEBUG (1): APPLICATION BOOTED.
+DEBUG (1): RADIO 1 ACCESA CORRETTAMENTE, TOS_NODE_ID=1
+DEBUG (1): Counter Request value=1
+DEBUG (1): Mote 1:requested ACK. 
+DEBUG (1): Mote 1: packet sent.
+DEBUG (1): Message sent correctly. :)
+DEBUG (1): Counter Request value=2
+DEBUG (1): Mote 1:requested ACK. 
+DEBUG (1): Mote 1: packet sent.
+DEBUG (1): Message sent correctly. :)
+DEBUG (1): Counter Request value=3
+DEBUG (1): Mote 1:requested ACK. 
+DEBUG (1): Mote 1: packet sent.
+DEBUG (1): Message sent correctly. :)
+DEBUG (1): Counter Request value=4
+DEBUG (1): Mote 1:requested ACK. 
+DEBUG (1): Mote 1: packet sent.
+DEBUG (1): Message sent correctly. :)
+DEBUG (1): Counter Request value=5
+DEBUG (1): Mote 1:requested ACK. 
+DEBUG (1): Mote 1: packet sent.
+DEBUG (1): Message sent correctly. :)
+DEBUG (2): APPLICATION BOOTED.
+DEBUG (2): RADIO 2 ACCESA CORRETTAMENTE, TOS_NODE_ID=2
+DEBUG (1): Counter Request value=6
+DEBUG (1): Mote 1:requested ACK. 
+DEBUG (1): Mote 1: packet sent.
+DEBUG (2): Mote 2: received a REQuest packet, it was number=6, sorry I didn't hear the previous 5 :(
+DEBUG (1): Message sent correctly. :)
+DEBUG (1): Mote 1:ACK received so stop timer 1,bye. 
+DEBUG (2): The value of the sensor is: 76.937514
+DEBUG (2): Mote 2: requested ACK for response.
+DEBUG (2): Mote 2: packet response sent correctly, waiting for ACK.
+DEBUG (2): Message sent correctly. :)
+DEBUG (2): Mote 2:ACK received stop radio 2,bye. 
+DEBUG (2): RADIO SWITCHED OFF TO PREVENT IDLE LISTENING POWER CONSUMPTION.
