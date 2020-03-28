@@ -41,12 +41,24 @@ t.addChannel("boot",out);
 print "Activate debug message on channel radio"
 t.addChannel("radio",out);
 print "Activate debug message on channel radio_send"
+t.addChannel("radio_on",out);
+print "Activate debug message on channel radio_on"
 t.addChannel("radio_send",out);
 print "Activate debug message on channel radio_ack"
 t.addChannel("radio_ack",out);
 print "Activate debug message on channel radio_rec"
 t.addChannel("radio_rec",out);
 print "Activate debug message on channel radio_pack"
+
+t.addChannel("radio_error",out);
+print "Activate debug message on channel radio_error"
+
+t.addChannel("error_ack",out);
+print "Activate debug message on channel error_ack"
+
+t.addChannel("fake_sensor_value",out);
+print "Activate debug message on channel fake_sensor_value"
+
 t.addChannel("radio_pack",out);
 print "Activate debug message on channel role"
 t.addChannel("role",out);
@@ -60,7 +72,7 @@ print ">>>Will boot at time",  time1/t.ticksPerSecond(), "[sec]";
 
 print "Creating node 2...";
 node2 = t.getNode(2);
-time2 = 1*t.ticksPerSecond();
+time2 = 5*t.ticksPerSecond();
 node2.bootAtTime(time2);
 print ">>>Will boot at time", time2/t.ticksPerSecond(), "[sec]";
 
